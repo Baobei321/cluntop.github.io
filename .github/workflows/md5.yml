@@ -45,7 +45,7 @@ jobs:
           git add **/*.js.md5
 
           if ! git diff-index --quiet HEAD; then
-            git commit -m "Update JS MD5"
+            git commit -m "Update md5"
             git push
             echo "::notice::🚀 MD5 文件已更新并推送！"
           else
